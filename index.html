@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crochet Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="main">
+            <div class="row" style="padding-top: 75px;">
+                <div class="col-12 center">
+                    <h1>Welcome</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 center">
+                    <img src="assets/yarn.png" width="300"/>
+                </div>
+                <div class="col-6 center" style="display: inline-block;">
+                    <div class="row">
+                        <div class="col">
+                            <input class="someMargin" type="number" id="rowGageInp" placeholder="row gage"/>
+                            <input class="someMargin" type="number" id="stsGageInp" placeholder="sts gage"/>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="someMargin" onclick="process()">GO</button>
+                        <button type="button" class="someMargin" onclick="clearTable()">clear</button>
+                    </div>
+                    <div class="col">
+                        <select class="" id="menu">
+                            <option value="womenSize">Women's size</option>
+                            <option value="menSize">men's size</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" style="padding-top: 50px;">
+                <div id="fixerCol" class="col-2"></div>
+                <div class="col-8 center">
+                    <table id="displayTable">
+                        <tr>
+                            <th>Type</th>
+                            <th>X-Small</th>
+                            <th>Small</th>
+                            <th>Medium</th>
+                            <th>Large</th>
+                            <th>X-Large</th>
+                            <th>2X</th>
+                            <th>3X</th>
+                            <th>4X</th>
+                            <th>5X</th>
+                        </tr>
+                        <tr id="chest">
+                            <td>Chest</td>
+                        </tr>
+                        <tr id="centerBack">
+                            <td>Center Back</td>
+                        </tr>
+                        <tr id="backWaist">
+                            <td>Back Waist</td>
+                        </tr>
+                        <tr id="crossBack">
+                            <td>Cross Back</td>
+                        </tr>
+                        <tr id="armLength">
+                            <td>Arm Length</td>
+                        </tr>
+                        <tr id="upperArm">
+                            <td>Upper Arm</td>
+                        </tr>
+                        <tr id="armholeDepth">
+                            <td>Armhole Depth</td>
+                        </tr>
+                        <tr id="waist">
+                            <td>Waist</td>
+                        </tr>
+                        <tr id="hips">
+                            <td>Hips</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
+        </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>

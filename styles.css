@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+}
+
+.somePad {
+    padding: 10px;
+}
+
+.someMargin {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    #fixerCol {
+        display: none;
+    }
+}
